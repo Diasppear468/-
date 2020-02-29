@@ -18,3 +18,8 @@ export function getSeller(){
 export function getGoods(){
     return req.get('/api/goods')
 }
+
+//请求商品信息
+export function getRatings(){
+    return req.get('/api/ratings')
+}

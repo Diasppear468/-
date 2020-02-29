@@ -16,6 +16,7 @@
           </span>
           {{v.name}}
         </div>
+        <div class="h50"></div>
       </ul>
     </div>
     <div class="rbox">
@@ -44,6 +45,7 @@
             </div>
           </div>
         </div>
+        <div class="h50"></div>
       </ul>
     </div>
   </div>
@@ -91,9 +93,9 @@ export default {
 .goods-box {
   display: flex;
   background-color: #dadee2;
-  height: 448px;
+  height: 100%;
   .lbox {
-    height: 100%;
+    height: 500px;
     background-color: #dadee2;
     overflow: scroll;
     .goodsLbox {
@@ -108,9 +110,12 @@ export default {
       }
     }
   }
-
+    .h50{
+      height: 50px;
+    }
   .rbox {
     flex: 1;
+    height: 500px;
     overflow: scroll;
     .goods-box-t {
       .goods-box-b {
